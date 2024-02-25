@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .day-monday li:hover {
+      transform: scale(1.05);
+    }
+    .day-tuesday li:active {
+      transform: scale(0.95);
+    }
+    .day-wednesday li:focus {
+      outline: 20px solid blue;
+    }
+    .day-thursday a:visited {
+      color: purple;
+      text-decoration: underline;
+    }
+
+    .day-friday li:link {
+      text-decoration: none;
+    }
+    .day-monday li:first-child {
+      background-color: rgb(230, 173, 208);
+    }
+    .day-tuesday li:last-child {
+      background-color: lightcoral;
+    }
+    .day-wednesday li:nth-child(odd) {
+      background-color: lightgreen;
+    }
+    .day-thursday li:nth-child(even) {
+      background-color: lightgoldenrodyellow;
+    }
+    .day-friday li:nth-of-type(3n) {
+      background-color: violet;
+    }
+  </style>
+  <body>
+    <div class="text-box">
+      <h3 style="color: pink">Пофарбуйте мене в рожевий колір (color:pink).</h3>
+      <p>Даний елемент має залишитись неоформленим.</p>
+      <p id="greycol" style="color: grey">
+        Пофарбуйте мене в сірий колір (color:grey).
+      </p>
+      <div>Даний елемент має залишитись неоформленим.</div>
+      <div>
+        <p style="color: red">Пофарбуй мене в червоний колір (color:red).</p>
+      </div>
+      <div>Даний елемент має залишитись неоформленим.</div>
+      <p style="color: green">Пофарбуйте мене в зелений колір (color:green).</p>
+      <p class="yellow" style="color: yellow">
+        Пофарбуйте мене в жовтий колір (color:yellow).
+      </p>
+    </div>
+    <div class="week">
+      <h2>Понеділок</h2>
+      <ul class="day-monday">
+        <li>Англійська</li>
+        <li>Англійська</li>
+        <li>Біологія</li>
+        <li>Біологія</li>
+        <li>Зарубіжна</li>
+        <li>Алгебра</li>
+        <li>Фізкультура</li>
+        <li>Українська</li>
+      </ul>
+      <h2>Вівторок</h2>
+      <ul class="day-tuesday">
+        <li>Українська</li>
+        <li>Українська</li>
+        <li>Фізика</li>
+        <li>Фізика</li>
+        <li>Алгебра</li>
+        <li>Німецька</li>
+        <li>Фізкультура</li>
+      </ul>
+      <h2>Середа</h2>
+      <ul class="day-wednesday" id="wednesday">
+        <li tabindex="0">Інформатика</li>
+        <li>Фізкультура</li>
+        <li tabindex="0">Труди</li>
+        <li>Історія</li>
+        <li tabindex="0">Історія</li>
+        <li>Зарубіжна</li>
+        <li tabindex="0">Німецька</li>
+      </ul>
+      <h2><a href="#thursday">Четвер</a></h2>
+      <ul class="day-thursday" id="thursday">
+        <li>Англійська</li>
+        <li>Англійська</li>
+        <li>Хімія</li>
+        <li>Хімія</li>
+        <li>Історія</li>
+        <li>Українська</li>
+        <li>Інформатика</li>
+      </ul>
+      <h2><a href="#friday">П'ятниця</a></h2>
+      <ul class="day-friday" id="friday">
+        <li>Англійська</li>
+        <li>Англійська</li>
+        <li>Географія</li>
+        <li>Геометрія</li>
+        <li>Геометрія</li>
+        <li>Географія</li>
+      </ul>
+    </div>
+  </body>
+</html>
